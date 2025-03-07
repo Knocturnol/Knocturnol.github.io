@@ -1,9 +1,10 @@
 html {
     background-image: linear-gradient(to left, white 0%, #f33405 100%);
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 110%;
     width: 90%;
     background-color: white;
     margin: 15px auto;
@@ -12,29 +13,36 @@ body {
     border-radius: 25px;
     box-shadow: 5px 5px 0 0;
 }
+
 a:hover, a:focus {
-font-style: italic;
-color: orangered;
-border: 3px blue;
-border-style: dotted solid;
+    font-style: italic;
+    color: orangered;
+    border: 3px dotted blue;
 }
+
 header h1 {
-    font-size: 175%;
+    font-size: 130%;
     color: maroon;
     text-indent: 30px;
+    margin:auto;
 }
+
 header h2 {
     font-size: 130%;
     color: #800000;
     text-indent: 30px;
+    margin: auto;
 }
+
 header img {
     float: left;
     margin-left: 2em;
 }
+
 .shadow {
     text-shadow: 2px 2px 2px rgb(128, 0, 0);
 }
+
 article { 
     clear: both;
     width: 70%;
@@ -43,42 +51,61 @@ article {
     column-rule: 2px dotted maroon;
     column-gap: 2em;
     margin-left: 2em;
+    margin-bottom: 2em; /* Added spacing below article */
 }
-article h3{
+
+article h3 {
     column-span: all;
 }
+
 article img {
-    float:left;
+    float: left;
     margin-right: 1em;
     margin-bottom: 1em;
 }
-main {
-    clear:left;
+
+article p {
+    margin-bottom: 5em; /* Added spacing below the paragraph */
 }
+
+main {
+    clear: left;
+}
+
 article p::first-letter {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     font-style: italic;
-    color:lightsteelblue;
+    color: lightsteelblue;
 }
+
 aside {
-    width: 20%;
+    width: 10%;
     float: right;
-    background-color:  #ffebc0;
+    background-color: #ffebc0;
+    padding: 10px;
+    margin-bottom: 8em; /* Added spacing below the aside */
 }
+
 footer {
-    clear:both;
-    border-top: 2px solid maroon;
+    clear: both;
+    border-top: 3px solid maroon;
+    margin-bottom: 10em;
 }
+
 footer p.copyright {
-   text-align: center;
-   font-size: 80%; 
+    text-align: center;
+    font-size: 80%;
 }
-p.fixed { width: auto;
-    position: fixed;
-    bottom: 35%;
-    right: 0;
-    right: 0;
+
+p.fixed {
+    width: auto;
+    position:absolute;
+    top: 1em; /* Adjusts position above the footer */  
+    right: 4em;
     border: 3px solid darkgreen; 
     background-color: lightgreen;
+    padding: 30px;
+    font-size: 20px;
 }
+
