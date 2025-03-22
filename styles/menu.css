@@ -13,15 +13,80 @@ font-weight: bold;
 border-right: 2px solid white; }
 #nav_menu ul li a.lastitem { border-right: none; }
 #nav_menu ul li a.current { color: yellow; }
-
+#nav_menu ul li a:hover {
+  background-color: darkblue;
+  color: yellow;
+}
 article {
     clear:both;
 }
 
-aside ol {
-    list-style-type: upper-roman;
+aside {
+  width: 20%;
+  position: fixed;
+  top: 150px;
+  left: 15px;
+}
+
+.side-list {
+  list-style-type: square; /* or decimal, circle, etc. based on your screenshot */
+  padding-left: 20px;
+}
+
+article {
+  width: 75%;
+  padding: 10px;
+}
+
+  body {
+    width: 95%;
+    margin: 15px auto;
+    font-family: sans-serif;
+    background: url(https://www.wallpaperflare.com/static/669/96/924/planet-space-solar-system-space-art-wallpaper.jpg) right repeat-y fixed;
   }
 
-aside ul {
-    list-style-type: square;
+  p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  .intro-image {
+    float: left;
+    margin: 10px 15px 10px 0;
+    width: 150px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    border-top: 2px solid #333;
+  }
+
+  .main-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  aside {
+    width: 20%;
+    position: sticky;
+    top: 120px;
+  }
+  
+  article {
+    width: 75%;
+    padding: 10px;
+    margin-left: 0;
+  }
+
+  side-list li {
+    margin-bottom: 10px;
+  }
+  
+  .wrap-text {
+    overflow: auto;
+    clear: both;
+    padding-top: 10px;
   }
