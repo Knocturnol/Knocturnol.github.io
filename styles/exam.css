@@ -57,16 +57,18 @@ article {
   background-color: white;
   z-index: 1;
   padding-left: 15px;
+  margin-right: 25%;
+  border-right: 3px dashed blue;
 }
 
 aside {
   width: 20%;
   position: fixed;
   top: 100px;
-  right: 10px; /* was left: 10px; */
+  right: 10px;
   background-color: rgba(200, 220, 255, 0.8);
   padding: 10px;
-  border-left: 3px dashed blue; /* change from border-right */
+  border-left: 3px dashed blue;
   border-right: none;
   z-index: 2;
 }
