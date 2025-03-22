@@ -1,3 +1,4 @@
+/* Body styles */
 body {
     width: 95%;
     margin: 15px auto;
@@ -7,7 +8,7 @@ body {
     padding: 10px;
   }
   
-  
+  /* Navigation menu */
   #nav_menu ul {
     list-style-type: none;
     padding: 0;
@@ -37,8 +38,13 @@ body {
     background-color: darkblue;
     color: yellow;
   }
+  #nav_menu::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
   
-  
+  /* Main layout */
   .main-content {
     display: flex;
     gap: 20px;
@@ -47,7 +53,9 @@ body {
   article {
     width: 75%;
     padding: 10px;
-    border-left: 3px dashed blue;
+    background-color: white;
+    z-index: 1;
+    border-left: none; /* moved to aside */
   }
   
   aside {
@@ -57,10 +65,10 @@ body {
     left: 15px;
     background-color: rgba(200, 220, 255, 0.8);
     padding: 10px;
-    border: 2px solid blue;
+    border-right: 3px dashed blue;
   }
   
-  
+  /* List styling */
   .side-list {
     list-style-type: upper-roman;
     padding-left: 20px;
@@ -74,7 +82,7 @@ body {
     margin-top: 5px;
   }
   
-  
+  /* Paragraph drop cap */
   p::first-letter,
   .dropcap {
     font-size: 2em;
@@ -85,7 +93,7 @@ body {
     padding-right: 5px;
   }
   
-  
+  /* Image and wrap text */
   .intro-image {
     float: left;
     margin: 10px 15px 10px 0;
@@ -98,17 +106,18 @@ body {
     padding-top: 10px;
   }
   
-  
+  /* Horizontal lines */
   hr {
     border: none;
     border-top: 3px solid blue;
     margin: 20px 0;
   }
   
-  
+  /* Footer */
   footer {
     text-align: center;
     padding: 15px;
     margin-top: 50px;
     border-top: 2px solid #333;
   }
+  
