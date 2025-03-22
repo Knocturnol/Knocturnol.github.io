@@ -1,4 +1,4 @@
-/* Body styles */
+
 body {
   width: 95%;
   margin: 15px auto;
@@ -9,7 +9,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Navigation menu */
+
 #nav_menu ul {
   list-style-type: none;
   padding: 0;
@@ -45,7 +45,7 @@ body {
   clear: both;
 }
 
-/* Main layout */
+
 .main-content {
   display: flex;
   gap: 20px;
@@ -83,7 +83,7 @@ aside {
   border-left: 3px dashed blue;
   z-index: 2;
 }
-/* List styling */
+
 .side-list {
   list-style-type: upper-roman;
   padding-left: 20px;
@@ -97,7 +97,7 @@ aside ul {
   margin-top: 5px;
 }
 
-/* Paragraph drop cap */
+
 p::first-letter,
 .dropcap {
   font-size: 2em;
@@ -108,7 +108,7 @@ p::first-letter,
   padding-right: 5px;
 }
 
-/* Image and wrap text */
+
 .intro-image {
   float: left;
   margin: 10px 15px 10px 0;
@@ -121,14 +121,14 @@ p::first-letter,
   padding-top: 10px;
 }
 
-/* Horizontal lines */
+
 hr {
   border: none;
   border-top: 3px solid blue;
   margin: 20px 0;
 }
 
-/* Footer */
+
 footer {
   text-align: center;
   padding: 15px;
