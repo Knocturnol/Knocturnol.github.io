@@ -1,4 +1,14 @@
-#nav_menu ul {
+body {
+    width: 95%;
+    margin: 15px auto;
+    font-family: sans-serif;
+    background: url('https://www.wallpaperflare.com/static/669/96/924/planet-space-solar-system-space-art-wallpaper.jpg') right repeat-y fixed;
+    border: 2px solid black;
+    padding: 10px;
+  }
+  
+  
+  #nav_menu ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -29,53 +39,53 @@
   }
   
   
-  body {
-    width: 95%;
-    margin: 15px auto;
-    font-family: sans-serif;
-    background: url('https://www.wallpaperflare.com/static/669/96/924/planet-space-solar-system-space-art-wallpaper.jpg') right repeat-y fixed;
-    border: 2px solid black;
-    padding: 10px;
-  }
-  
   .main-content {
     display: flex;
     gap: 20px;
   }
   
-  aside {
-    width: 20%;
-    position: sticky;
-    top: 120px;
+  article {
+    width: 75%;
+    padding: 10px;
+    border-left: 2px dashed blue;
   }
   
+  aside {
+    width: 20%;
+    position: fixed;
+    top: 150px;
+    left: 15px;
+    background-color: rgba(200, 220, 255, 0.8);
+    padding: 10px;
+    border: 2px solid blue;
+  }
+  
+  
   .side-list {
-    list-style-type: square;
+    list-style-type: upper-roman;
     padding-left: 20px;
   }
   .side-list li {
     margin-bottom: 10px;
   }
-  
-  article {
-    width: 75%;
-    padding: 10px;
-  }
-  
-  hr {
-    border: none;
-    border-top: 2px solid #000;
-    margin: 20px 0;
+  aside ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 5px;
   }
   
   
-  p::first-letter {
+  p::first-letter,
+  .dropcap {
     font-size: 2em;
     font-weight: bold;
     font-style: italic;
+    float: left;
+    line-height: 1;
+    padding-right: 5px;
   }
   
- 
+  
   .intro-image {
     float: left;
     margin: 10px 15px 10px 0;
@@ -86,6 +96,13 @@
     overflow: auto;
     clear: both;
     padding-top: 10px;
+  }
+  
+  
+  hr {
+    border: none;
+    border-top: 2px solid blue;
+    margin: 20px 0;
   }
   
   
