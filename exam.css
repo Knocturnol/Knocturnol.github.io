@@ -47,7 +47,7 @@ body {
   article {
     width: 75%;
     padding: 10px;
-    border-left: 2px dashed blue;
+    border-left: 3px dashed blue;
   }
   
   aside {
@@ -101,7 +101,7 @@ body {
   
   hr {
     border: none;
-    border-top: 2px solid blue;
+    border-top: 3px solid blue;
     margin: 20px 0;
   }
   
