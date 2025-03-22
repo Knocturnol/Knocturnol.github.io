@@ -49,6 +49,18 @@ body {
 .main-content {
   display: flex;
   gap: 20px;
+  position: relative;
+}
+
+.main-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 75%;
+  width: 0;
+  border-left: 3px dashed blue;
+  z-index: 0;
 }
 
 article {
@@ -58,7 +70,6 @@ article {
   z-index: 1;
   padding-left: 15px;
   margin-right: 25%;
-  border-right: 3px dashed blue;
 }
 
 aside {
@@ -68,11 +79,10 @@ aside {
   right: 10px;
   background-color: rgba(200, 220, 255, 0.8);
   padding: 10px;
+  border: none;
   border-left: 3px dashed blue;
-  border-right: none;
   z-index: 2;
 }
-
 /* List styling */
 .side-list {
   list-style-type: upper-roman;
