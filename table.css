@@ -46,14 +46,20 @@ html, body {
   table.third th, table.third td {
     padding: 0.7em;
     border: 2px solid orangered;
+  }
+  table.third td.number {
     vertical-align: top;
   }
   table.third thead tr:first-child {
+    background-color: lightgreen;
     border-top: 2px solid orangered;
-    background-color: peachpuff;
+    font-weight: bold;
+    text-align: center;
   }
   table.third thead tr:nth-child(2) {
-    background-color: lightcoral;
+    background-color: mediumseagreen;
+    font-weight: bold;
+    text-align: center;
   }
   table.third tbody tr:last-child {
     border-bottom: 2px solid orangered;
