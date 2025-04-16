@@ -1,4 +1,4 @@
-html, body {
+hhtml, body {
     margin: 1em;
     height: 100%;
     font-size: 100%;
@@ -42,10 +42,13 @@ html, body {
     border-collapse: collapse;
     border: 2px solid orangered;
     width: 100%;
+    margin-top: 1em;
   }
-  table.third th, table.third td {
-    padding: 0.7em;
+  table.third th,
+  table.third td {
+    padding: 0.5em 1em;
     border: 2px solid orangered;
+    text-align: left;
   }
   table.third td.number {
     vertical-align: top;
@@ -54,12 +57,12 @@ html, body {
     background-color: lightgreen;
     border-top: 2px solid orangered;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   table.third thead tr:nth-child(2) {
-    background-color: mediumseagreen;
+    background-color: lightgreen;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
   }
   table.third tbody tr:last-child {
     border-bottom: 2px solid orangered;
