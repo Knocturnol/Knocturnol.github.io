@@ -5,18 +5,26 @@
     box-sizing: border-box;
   }
   
-  body {
+  html, body {
+    height: 100%;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f6f8;
     color: #2c3e50;
-    line-height: 1.6;
   }
   
-  /* Container Layout */
-  .container {
-    max-width: 800px;
-    margin: 80px auto;
+  /* Flex wrapper for full center */
+  .center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     padding: 20px;
+  }
+  
+  /* Content Container */
+  .container {
+    max-width: 700px;
+    width: 100%;
     text-align: center;
   }
   
@@ -24,13 +32,13 @@
   header h1 {
     font-size: 2.8rem;
     color: #1e3a5f;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
   }
   
   header p {
     font-size: 1.3rem;
     color: #607d8b;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   
   /* Info Card */
@@ -38,24 +46,24 @@
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
-    padding: 40px;
+    padding: 30px;
   }
   
   .info-card h2 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #34495e;
     margin-top: 20px;
   }
   
   .info-card p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #555;
     margin-top: 8px;
   }
   
   /* Footer */
   footer {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 1rem;
     color: #7f8c8d;
   }
