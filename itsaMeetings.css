@@ -10,9 +10,10 @@
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #f4f6f8;
     color: #2c3e50;
+    text-align: center;
   }
   
-  /* Flex wrapper for center alignment */
+  /* Flex wrapper for full center alignment */
   .center-wrapper {
     display: flex;
     justify-content: center;
@@ -21,11 +22,10 @@
     padding: 20px;
   }
   
-  /* Content Container */
+  /* Main container */
   .container {
     max-width: 700px;
     width: 100%;
-    text-align: center;
   }
   
   /* Header */
@@ -41,12 +41,13 @@
     margin-bottom: 30px;
   }
   
-  /* Info Card */
+  /* Info Card Section */
   .info-card {
     background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
     padding: 30px;
+    text-align: center;
   }
   
   .info-card h2 {
@@ -58,7 +59,7 @@
   .info-card p {
     font-size: 1.2rem;
     color: #555;
-    margin-top: 8px;
+    margin-top: 10px;
   }
   
   /* Footer */
@@ -68,12 +69,14 @@
     color: #7f8c8d;
   }
   
-  footer a {
+  footer a,
+  .info-card a {
     color: #1e88e5;
     text-decoration: none;
   }
   
-  footer a:hover {
+  footer a:hover,
+  .info-card a:hover {
     text-decoration: underline;
   }
   
